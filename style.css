@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    font-family: 'Questrial', sans-serif;
+}
+
+#wrapper {
+    display: grid;
+    /* grid-gap: 10px; */
+    grid-template-areas:
+        "hero hero hero"
+        ". . ."
+        "title title title"
+        ". body ."
+        ". body ."
+        ". body ."
+        ". body ."
+        ". body ."
+        "footer footer footer";
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 100vh auto auto auto auto auto auto auto 80px;
+    height: 100%;
+}
+
+#nav {
+    height: 80px;
+    /* background-color: #ff8400; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+}
+
+#nav h1 {}
+
+#title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bdc3c7;
+    font-style: italic;
+    padding: 80px;
+}
+
+#title h2 {
+    /* padding: 40px; */
+}
+
+#side {
+    grid-area: side;
+    /* background-color: #95a5a6; */
+    margin: 10px;
+    color: #955612;
+}
+
+.list {
+    list-style: none;
+}
+
+#img {
+    grid-area: img;
+    /* background-color: #3C3B3D; */
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThn1UzsDcKpvYd2h_0LDTd-rpH10WhNgOXZ70u4KN1P3003LxOu2kn-ptByA&s");
+}
+
+#hero1 {
+    grid-area: hero;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+}
+
+/* #34495e */
+#hero {
+    height: auto;
+    /* background-color: #34495e; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+}
+
+#hero h2 {
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 30px;
+    border: solid 4px #ffffff;
+    border-radius: 5px;
+}
+
+#body {
+    padding: 10px;
+    grid-area: body;
+    background-color: #ffffff;
+    color: #181818;
+}
+
+#foot {
+    grid-area: footer;
+    background-color: #2c3e50;
+    display: flex;
+    color: #ffffff;
+    align-items: center
+}
+
+#foot p {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+#foot #right {
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.list li {
+    padding: 10px;
+}
+
+.content {
+    display: grid;
+    grid-auto-rows: 400px;
+    grid-row-gap: 40px;
+}
+
+.content-div {
+    /* background-color: #2980b9; */
+    /* padding-bottom: 80px; */
+}
+
+.content-div p {
+    color: #181818;
+    padding: 40px 0;
+}
+
+#who {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#cont-img {
+    background-image: url("https://images.unsplash.com/photo-1462041866295-e4af004a32ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1566&q=80");
+    background-size: cover;
+}
+
+#who {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#what {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#do1 {
+    background-image: url("https://img3.goodfon.com/wallpaper/nbig/d/87/illustration-hello-coffee.jpg");
+    background-size: cover;
+}
+
+#do2 {
+    background-image: url("https://i.pinimg.com/736x/d1/d4/9c/d1d49cb6bf39f83ed86c0ceda29cbb3a.jpg");
+    background-size: cover;
+}
+
+#do3 {
+    background-image: url("https://image.freepik.com/free-photo/space-coffee-yellow-background_66899-169.jpg");
+    background-size: cover;
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #3C3B3D;
+    border-radius: 20px;
+}
